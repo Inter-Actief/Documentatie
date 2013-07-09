@@ -1,0 +1,16 @@
+box: wercker/ruby
+build:
+  steps:
+    - bundle-install
+    - script:
+        name: Middleman
+        code: |
+            bundle exec middleman build
+deploy:
+  steps:
+    - bundle-install
+    - heroku-deploy 
+    - script:
+        name: Heroku build
+        code: |
+            heroku run bundle exec middleman build --app utwentedocs
