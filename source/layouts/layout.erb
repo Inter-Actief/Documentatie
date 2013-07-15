@@ -31,23 +31,12 @@
                         <div class="dropdown">
                           <!-- Link or button to toggle dropdown -->
                           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                            <li class='nav-header'>Programmeer talen</li>
-                            <li ><a href="python.html">Python</a></li>
-                            <li ><a href="python.html">Haskell</a></li>
-                            <li ><a href="python.html">SQL</a></li>
-                            <li class='nav-header'>Hardware</li>
-                            <li ><a href="arduino.html">Arduino</a></li>
-                            <li class='nav-header'>Project management</li>
-                            <li ><a href="trello.html">Trello</a></li>
-                            <li ><a href="arduino.html">GitHub</a></li>
-                            <li class='nav-header'>Version management</li>
-                            <li ><a href="arduino.html">Git</a></li>
-                            <li class='nav-header'>Overig</li>
-                            <li ><a href="arduino.html">Wireshark</a></li>
+                            <%= partial  "layouts/menu.html" %>
                           </ul>
                         </div>
                     </li>
                     <li><a href = "documentatie.html">Over de documentatie</a></li>
+                    <li><a href = "https://github.com/boersmamarcel/Documentatie/issues">Probleem aanmelden</a></li>
                 </ul>
               </div>
           </div>
@@ -58,19 +47,7 @@
           <div class="span2">
             <!-- Chapter menu -->
             <ul class='nav nav-list'>
-              <li class='nav-header'>Programmeer talen</li>
-              <li ><a href="python.html">Python</a></li>
-              <li ><a href="python.html">Haskell</a></li>
-              <li ><a href="python.html">SQL</a></li>
-              <li class='nav-header'>Hardware</li>
-              <li ><a href="arduino.html">Arduino</a></li>
-              <li class='nav-header'>Project management</li>
-              <li ><a href="trello.html">Trello</a></li>
-              <li ><a href="arduino.html">GitHub</a></li>
-              <li class='nav-header'>Version management</li>
-              <li ><a href="arduino.html">Git</a></li>
-              <li class='nav-header'>Overig</li>
-              <li ><a href="arduino.html">Wireshark</a></li>
+              <%= partial "layouts/menu.html" %>
             </ul>
           </div>
           <div class="span10">
