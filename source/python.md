@@ -16,7 +16,7 @@ In dit hoofdstuk wordt beschreven waar Python gedownload kan worden en hoe deze 
 Klik op de [Python 3 download](http://www.python.org/getit/) link om bij de download pagina van Python te komen.
 Download de volgende versie zoals hieronder beschreven en afgebeeld:
 
-`Python 3.3.2 Windows X86-64 MSI Installer (Windows AMD64 / Intel 64 / X86-64 binary [1] -- does not include source)`
+`Python 3.3.2 Windows X86-64 MSI Installer`
 
 ![Download pagina](python-3-download.png "Download pagina")
 

@@ -35,5 +35,5 @@ Hieronder staan de links naar de applicatie:
 * [GitHub for Mac](http://mac.github.com/)
 
 ## Leer git
-In het begin kan het soms wat lastig zijn met git. Om het de basic skills van git onder de knie te krijgen in de commandline heeft GitHub een tutorial gemaakt die [hier](http://try.github.io/) te vinden is.
+In het begin kan het soms wat lastig zijn met git. Om de basis vaardigheden van git onder de knie te krijgen in de commandline heeft GitHub een tutorial gemaakt die [hier](http://try.github.io/) te vinden is. 
 Verder heeft CodeSchool ook een aantal geavanceerde git tutorials die erg aan te raden zijn. (Klik [hier](http://www.codeschool.com/paths/electives#git-basics) om naar CodeSchool te gaan)
