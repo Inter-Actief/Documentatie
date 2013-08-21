@@ -45,7 +45,7 @@ Om code op de Arduino te zetten kan er gebruik worden gemaakt van de standaard s
 Type het volgende commando om de code van bestand `helloworld.hex` te uploaden naar de Arduino:
 
 ```
-avrdude -q -q -patmega328p -carduino -P COM3 -b115200 -D -Uflash:w:helloworld.hex`:i
+avrdude -q -q -patmega328p -carduino -P COM3 -b115200 -D -Uflash:w:helloworld.hex:i
 ```
 
 **!LETOP:** met het _-P COM3_ argument wordt aangegeven waar de Arduino is aangesloten, dit moet worden vervangen door de poort gevonden in de vorige stap.
