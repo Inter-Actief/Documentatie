@@ -7,7 +7,7 @@ De installatie is uitgevoerd op windows 8 in VirtualBox.
 Specificaties:
 
 * Windows 8 Pro NL (64-bits editie)
-* VirtualBox 4.2.16
+* [VirtualBox 4.2.16](virtualbox.html)
 
 ## Installatie
 In dit hoofdstuk wordt beschreven waar Python gedownload kan worden en hoe deze correct is te installeren.
