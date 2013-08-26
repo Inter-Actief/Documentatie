@@ -37,10 +37,8 @@ Om te testen of Haskell werkt moet het volgende commando *elloh* als antwoord ge
 
 ## Getting started
 Nu de machine een werkende installatie bevat van Haskell is het tijd om kennis te maken met Haskell zelf.
-Hieronder zijn de officiële documentatie te vinden en een aantal websites met tutorials.
+Hieronder zijn een aantal websites met tutorials te vinden.
 
-### Officiële documentatie
-De officiele [Haskell](http://www.haskell.org/ghc/docs/7.4-latest/html/libraries/index.html) documentatie.
 
 ### Try Haskell
 Haskell heeft een online platform ontwikkeld waar kennis gemaakt kan worden met Haskell. Hier kunnen tutorials gevolgd worden die de basis van Haskell leren.
