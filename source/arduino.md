@@ -15,7 +15,8 @@ Download en installeer de volgende programma's om Arduino te kunnen draaien.
 
 ### Download
 * [Arduino for windows](http://arduino.googlecode.com/files/arduino-1.0.5-windows.exe)
-* [AVRDude](http://sourceforge.net/projects/winavr/)
+* [AVRDude](http://sourceforge.net/projects/winavr/files/WinAVR/20100110/WinAVR-20100110-install.exe/download)
+* [Putty](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
 
 Na het installeren van de bovenstaande software is het mogelijk om de Arduino te programmeren.
 
