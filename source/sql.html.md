@@ -1,19 +1,17 @@
-# SQL 
-Deze handleiding zal een aantal links naar tutorials bevatten die beschrijven hoe SQL werkt.
+#SQL
+This manual contains a number of links to tutorials related to SQL.
 
-## Leer SQL
-Hieronder staan een aantal externe websites met tutorials voor SQL.
+##Learn SQL
 
-**Tutorials:**
+####Tutorials:
+ * [sqlzoo](http://sqlzoo.net/wiki/Main_Page) with online exercises.
+ * [SQL-tutorial.ru](http://www.sql-tutorial.ru/en/content.html) with online exercises.
+ * [Learn SQL the hard way] (http://sql.learncodethehardway.org/). 
 
-* [sqlzoo](http://sqlzoo.net/wiki/Main_Page) met online oefeningen
-* [SQL-tutorial.ru](http://www.sql-tutorial.ru/en/content.html) met online oefeningen
-* [Learn sql the hardway](http://sql.learncodethehardway.org/) (**!LETOP:** de website is nog in ontwikkeling dus nog niet alle opgaven zijn gemaakt.)
+> **WARNING:** This site is still in the alpha fase at the moment of writing. Some things might not work yet.
 
-## Officiële documentatie
-Hier zijn een aantal links naar de officiële documentatie van verschillende SQL servers:
-
-* [PostgreSQL 9.2](http://www.postgresql.org/docs/9.2/static/index.html)
-* [MySQL 5.6](https://dev.mysql.com/doc/refman/5.6/en/index.html)
+##Official documentation
+A number of links to the official documentation of some different SQL servers:
+* [PostgreSQL](https://www.postgresql.org/docs/current/static/index.html)
+* [MySQL](http://dev.mysql.com/doc/refman/5.7/en/)
 * [phpMyAdmin](http://docs.phpmyadmin.net/en/latest/)
-

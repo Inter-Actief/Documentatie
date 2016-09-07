@@ -1,53 +1,42 @@
 # Haskell
-Deze handleiding zal kort beschrijven hoe Haskell op Windows geïnstalleerd kan worden.
+This manual describes briefly how to install Haskell on Windows.
 
-## Systeemeisen
-De installatie is uitgevoerd op windows 8 in VirtualBox.
+##System requirements
+####Recommended
+* Windows 8 or 10 (64 bit)
 
-Specificaties:
+####Minimum
+* Windows OS
 
-* Windows 8 Pro NL (64-bits editie)
-* [VirtualBox 4.2.16](virtualbox.html)
+##Installation
+This chapter describes where Haskell can be downloaded and how to install Haskell correctly.
 
-## Installatie
-In dit hoofdstuk wordt beschreven waar Haskell gedownload kan worden en hoe deze correct is te installeren.
+###Download
+Go to the [Haskell download page](https://www.haskell.org/platform/windows.html) and download the **latest full version (64-bit)** of Haskell, for example:
 
-### Download
-Klik op de [Haskell download](http://www.haskell.org/platform/windows.html) link om bij de download pagina van Haskell te komen.
-Download de volgende versie zoals hieronder beschreven en afgebeeld:
+```
+HaskellPlatform-8.0.1-full-x86_64-setup-a.exe
+```
 
-`Haskell platform 2013.2.0.0 for Window`
+###Install Haskell
+Run through the default setup and make sure the option to set a PATH variable is checked.
 
-![Download pagina](haskell.png "Download pagina")
+Open the **Command Promt** by clicking the **Windows Button**, type *'cmd'* and hit enter. Start **GHCI** with the following command:
 
-### Installeer Haskell
-Indien de download start zal Windows vragen om het programma uit te voeren of op te slaan.
-Kies hier voor **uitvoeren**. Doorloop vervolgens de standaard setup, hier is verder niks aangepast.
-Aan het einde wordt er gevraagd of de *GLUT library* geïnstalleerd moet worden, klik hier op **Ja**.
+```
+ghci
+```
+Execute the following command to check if Haskell works:
 
-Open het programma **Opdrachtprompt** door op de **Windows knop** te drukken en '*Opdrachtprompt*' te typen.
-En start **GHCI** op met het volgende commando:
-
-`ghci`
-
-Om te testen of Haskell werkt moet het volgende commando *elloh* als antwoord geven:
-
-`reverse "hello"`
-
-
-## Getting started
-Nu de machine een werkende installatie bevat van Haskell is het tijd om kennis te maken met Haskell zelf.
-Hieronder zijn een aantal websites met tutorials te vinden.
+```
+reverse "hello"
+-- Returns "elloh"
+```
 
 
-### Try Haskell
-Haskell heeft een online platform ontwikkeld waar kennis gemaakt kan worden met Haskell. Hier kunnen tutorials gevolgd worden die de basis van Haskell leren.
+##Getting started
+The machine now has a working installation of Haskell and it's time to get to know Haskell itself. Below you find some websites with tutorials.
 
+###Try Haskell
+Haskell has developed an online platform where people can get to know Haskell. This platform contains tutorials to learn Haskell's basics:
 * [Try Haskell](http://tryhaskell.org/)
-
-
-
-
-
-
-

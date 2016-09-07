@@ -1,68 +1,52 @@
 # Python 3
-Deze handleiding zal kort beschrijven hoe Python 3 op Windows geïnstalleerd kan worden.
+This manual describes briefly how to install Python 3 on Windows.
 
-## Systeemeisen
-De installatie is uitgevoerd op windows 8 in VirtualBox.
+##System requirements
+####Recommended
+* Windows 8 or 10 (64 bit)
 
-Specificaties:
+####Minimum
+* Windows Vista (XP not supported)
 
-* Windows 8 Pro NL (64-bits editie)
-* [VirtualBox 4.2.16](virtualbox.html)
+##Installation
+This chapter describes where Python can be downloaded and how to install Python correctly.
 
-## Installatie
-In dit hoofdstuk wordt beschreven waar Python gedownload kan worden en hoe deze correct is te installeren.
+###Download
+Click at the [Python 3 download](https://www.python.org/getit/) link to get at the download page of Python. Download the latest version of Python 3, e.g:
+`Python 3.5.2.exe`
 
-### Download
-Klik op de [Python 3 download](http://www.python.org/getit/) link om bij de download pagina van Python te komen.
-Download de volgende versie zoals hieronder beschreven en afgebeeld:
+###Install Python
+**Run** your downloaded `python-3.#.#.exe` file. Run through the default setup, nothing has to be changed.
 
-`Python 3.3.2 Windows X86-64 MSI Installer`
+> **WARNING:** Don't forget to notate the install folder. For this manual, `C:\Python` is used.
 
-![Download pagina](python-3-download.png "Download pagina")
+Open the **Command Prompt** and navigate to the install folder. This can be done in three ways:
 
-### Installeer python
-Indien de download start zal Windows vragen om het programma uit te voeren of op te slaan.
-Kies hier voor **uitvoeren**:
-
-![Python 3](python-3-windows-uitvoeren.png)
-
-Doorloop vervolgens de standaard setup, hier is verder niks aangepast.
-
-**LETOP:** Indien de installatie folder wordt aangepast dient dit andere pad in de overige voorbeelden gebruikt te worden.
-
-Open het programma **Opdrachtprompt** door op de **Windows knop** te drukken en '*Opdrachtprompt*' te typen.
-Ga vervolgens naar de volgende map **C:\Python33** door in de opdrachtprompt het volgende te typen: 
-
-`cd C:\Python33`
-
-Om te testen of python werkt kan python worden opgestart met het volgende commando:
-
-`python.exe`
-
-De volgende code zal een print statement geven:
+1. **Open** your installation folder. Click on **File** and then on **Open Command Prompt**.
+2. Also **open** your installation folder. Type *'cmd'* in the navigation bar and hit enter.
+3. Click the **Windows button**, type *'cmd'* and hit the enter button. Then navigate to the install folder by typing: 
 
 ```
-print("Python werkt!")
+cd C:\Python
 ```
 
-## Getting started
-Nu de machine een werkende installatie bevat van Python is het tijd om kennis te maken met Python zelf.
-Hieronder zijn de officiële documentatie te vinden en een aantal websites met tutorials.
+To test if Python is working, you can start Python with the following command:
 
-### Officiële documentatie
-De officiele [Python 3.0](http://docs.python.org/3.0/index.html) documentatie.
+```
+python.exe
+```
 
-### Codecademy
-Codecademy is een online leerplatform waar vele talen geleerd kunnen worden waaronder Python.
-Er zijn vele oefeningen opgesteld variërend van beginner tot geavanceerd. Klik op de [Codecademy](http://www.codecademy.com/tracks/python) link om te starten bij codecademy.
+The following code will execute a print statement:
 
-**LETOP:** Codecademy gebruikt python 2.7.3, dit wordt gedaan omdat python 3.0 niet volledig backwards compatible is.
-Toch is codecademy een goede plek om kennis te maken met python maar onthoud wel dat sommige voorbeelden niet in Python 3.0 zullen werken.
-Om exact te weten te komen wat de verschillen zijn tussen Python 3 en lagere versies kan er gekeken worden op deze website: [What's new in python 3.0](http://docs.python.org/3.0/whatsnew/3.0.html).
+```
+print("Python works!")
+```
 
+##Getting started
+The machine now has a working installation of Python and it's time to get to know Python itself. Below you find the offical documentation and a link to Codecademy, an online platform to learn programming languages.
 
+###Official documentation
+[The official Python 3.0 documentation can be found here](http://docs.python.org/3.0/index.html).
 
-
-
-
-
+###Codecademy
+Codecademy is an online platform where many programming languages can be learned, including Python. Codecademy has many excercises varying from novice to advanced. [Click here to go to Codecademy](https://www.codecademy.com/learn/python).
