@@ -2,12 +2,13 @@
 # the following line to use 'https'
 source 'http://rubygems.org'
 
+# Middleman
 gem 'middleman', '>= 4.0.0'
-gem 'rack-contrib'
-# Live-reloading plugin
 gem 'middleman-livereload'
-gem 'redcarpet'
 gem 'middleman-sprockets', '>= 4.0.0'
+
+gem 'rack-contrib'
+gem 'redcarpet'
 
 # For faster file watcher updates:
 # gem 'wdm', '~> 0.1.0') # Windows
