@@ -1,61 +1,63 @@
 #Arduino
-Deze handleiding zal kort beschrijven hoe Arduino op Windows geïnstalleerd kan worden.
+This manual describes briefly how to install the software for working with Arduino's on Windows.
 
-## Systeemeisen
-De installatie is uitgevoerd op windows 8 in VirtualBox.
+##System requirements
+####Recommended
+* Windows 8 or 10 (64 bit)
 
-Specificaties:
+####Minimum
+* Windows OS
 
-* Windows 8 Pro NL (64-bits editie)
-* [VirtualBox 4.2.16](virtualbox.html)
-
-
-## Installatie
-Download en installeer de volgende programma's om Arduino te kunnen draaien.
-
-### Download
-* [Arduino for windows](http://arduino.googlecode.com/files/arduino-1.0.5-windows.exe)
-* [AVRDude](http://sourceforge.net/projects/winavr/files/WinAVR/20100110/WinAVR-20100110-install.exe/download)
-* [Putty](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe)
-
-Na het installeren van de bovenstaande software is het mogelijk om de Arduino te programmeren.
-
-## Setup
-Omdat windows in VirtualBox draait is het noodzakelijk om een aantal instellingen in de VirtualBox aan te passen zodat de USB poorten worden doorgelinkt naar het gast OS. Klik op **Settings** in virtualbox om de instellingen van de virtuele machine aan te passen.
-Klik vervolgens op **Ports (1)** en **USB (2)** zoals hieronder afgebeeld:
-
-![USB instellingen](VB-usb-settings.png)
-
-Zorg ervoor dat de volgende checkboxen zijn aangevinkd:
-
-* Enable USB Controller **(3)**
-* Enable USB 2.0 (EHCI) Controller **(4)**
-
-Sluit de Arduino aan en klik op knop **(5)** en selecteer de Arduino. Indien alles goed is gegaan zal de Arduino in de lijst staan **(6)**.
-
-De virtuele machine kan nu opnieuw worden opgestart en zal de Arduino herkennen als een aangesloten USB apparaat.
-Mocht dit niet het geval zijn dan kan het helpen om de Arduino even los te koppelen en opnieuw aan te sluiten.
-
-Om de code op de Arduino te kunnen uploaden is het noodzakelijk om te weten op welke poort de Arduino aangesloten is. De poort kan worden gevonden in apparaatbeheer in windows. Het poort nummer kan verschillen per computer en per poort waarop de Arduino is aangesloten, hieronder is een afbeelding ter illustratie toegevoegd.
-
-![Apparaat beheer](apparaatbeheer.png)
-
-## Code uploaden
-Om code op de Arduino te zetten kan er gebruik worden gemaakt van de standaard suite die bij de Arduino hoort, voor meer info zie de volgende [link](http://arduino.cc/en/Guide/Windows). Ook is het mogelijk om met AVRDude code op Arduino te zetten. Hieronder volgt een basis voorbeeld om code op de Arduino te uploaden.
-
-Type het volgende commando om de code van bestand `helloworld.hex` te uploaden naar de Arduino:
-
+##1. Installation of the Arduino software
+###Download
+Go to the [Arduino Software page](https://www.arduino.cc/en/Main/Software) and download the latest version of the Arduino Software, for example:
 ```
-avrdude -q -q -patmega328p -carduino -P COM3 -b115200 -D -Uflash:w:helloworld.hex:i
+arduino-1.6.11-windows.exe
 ```
 
-**!LETOP:** met het _-P COM3_ argument wordt aangegeven waar de Arduino is aangesloten, dit moet worden vervangen door de poort gevonden in de vorige stap.
+###Install
+Execute the installer and complete the installation. You don't have to change anything
 
+##2. Installation of WinAVR
+###Download
+Download [latest version of WinAVR](https://sourceforge.net/projects/winavr/files/latest/download?source=files), for example:
+```
+WinAVR-20100110-install.exe
+```
 
-## Officiële documentatie
-De officiële documentatie van Arduino:
+###Install
 
-* [Arduino for windows Getting Started](http://arduino.cc/en/Guide/Windows)
-* [Arduino language reference](http://arduino.cc/en/Reference/HomePage)
-* [AVRDude](http://www.nongnu.org/avrdude/)
+####During the installation
+>**WARNING:** The installer messes up the path variable by default. Please read the following instructions carefully **before** installing.
 
+Run the installation of WinAVR, but do the following during the installation:
+* Remember the install directory. The default directory is located at ```C:\ ```, for example ```C:\WinAVR-20100110 ``` (depending on version).
+* On the screen **"Choose Components"** *de*select **"Add Directories to PATH (Recommended)"**. This option will break it.
+
+####After the installation
+* Open the environment variables: 
+    1. Press **Win+R**, type *sysdm.cpl* and hit **Enter**.
+    2. Navigate to the **Advanced** tab and click at **Environment Variables...**.
+    3. Under System variables, click **Path** or **PATH** and click **Edit**
+    4. Now add ```C:\WinAVR-20100110\bin;C:\WinAVR-20100110\utils\bin;``` at the **start of the value**. Please note that ```C:\WinAVR-20100110``` should be replaced by the correct install folder if another install folder is used.
+
+####Uploading hex files to the Arduino
+1. Find your Arduino's COM number:
+    * Go to Start. Search and open **Device Manager** [English Windows] or **Apparaatbeheer** [Dutch Windows].
+    * Look for *"Arduino (COMnr)"* and remember the COM port number.
+    
+2. Open a Command Prompt in your working directory. There are three ways to do this:
+    * Windows 8/10 only: Go to your working directory in **Explorer** and choose **File > Open command prompt**. 
+    * Windows 8/10 only: Also go to your working directory in **Explorer**, but now type *cmd* in the navigation bar and hit **Enter**.
+    * Start ```cmd.exe``` and use the following command:
+    ```cmd
+    cd [Full install folder path]
+    :: For example ::
+    cd C:\WinAVR-20100110\
+    ```
+    
+3. Upload hex files:
+    * If you have the file ```code.hex``` and the Arduino connected to COM13, then type:
+    ```cmd
+    upload com13 code.hex
+    ```
