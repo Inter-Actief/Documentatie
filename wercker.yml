@@ -13,4 +13,4 @@ deploy:
     - script:
         name: Heroku build
         code: |
-            bundle exec middleman build --app utwentedocs
+            bundle exec middleman build 
