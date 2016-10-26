@@ -1,3 +1,6 @@
+---
+title: Github
+---
 # GitHub
 GitHub is een online platform om samen aan code te werken. GitHub is niet alleen gespecialiseerd in het hosten van code maar ook in het gemakkelijk laten samenwerken van teams aan code.
 Het bedrijf bestaat sinds 2005 en heeft al vele miljoenen gebruikers die er dagelijks gebruik van maken. In deze handleiding wordt toegelicht hoe er een GitHub account kan worden aangevraagd en hoe studenten in aanraking kunnen komen voor een *Educational Discount*. Verder wordt er verwezen naar website waar git geleerd kan worden.

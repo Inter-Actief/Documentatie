@@ -1,4 +1,7 @@
-#VirtualBox
+---
+title: Virtualbox
+---
+# VirtualBox
 Deze handleiding zal kort beschrijven hoe VirtualBox op Windows geïnstalleerd kan worden.
 
 ## Systeemeisen

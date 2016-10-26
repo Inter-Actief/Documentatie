@@ -1,4 +1,7 @@
-#Lightside
+---
+title: Lightside
+---
+# Lightside
 Deze handleiding zal kort beschrijven hoe LightSide op Windows geïnstalleerd kan worden.
 
 ## Systeemeisen
