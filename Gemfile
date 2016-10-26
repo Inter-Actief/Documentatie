@@ -10,6 +10,8 @@ gem 'middleman-sprockets', '>= 4.0.0'
 gem 'rack-contrib'
 gem 'redcarpet'
 
+gem 'rake'
+
 # For faster file watcher updates:
 # gem 'wdm', '~> 0.1.0') # Windows
 

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Use title if it's in the page YAML frontmatter -->
-  <title><%= current_page.data.title || 'Universiteit Twente Documentatie' %></title>
+  <title><%= current_page.data.title || 'University of Twente Documentation' %></title>
 
   <%= stylesheet_link_tag 'bootstrap', 'bootstrap-docs', 'bootstrap-responsive', 'prettify', 'flat-ui', 'normalize', 'all' %>
   <%= javascript_include_tag 'bootstrap', 'holder', 'jquery.min', 'prettify' %>
@@ -27,14 +27,14 @@
         <ul class="nav">
           <li class='dropdown'>
             <a class="dropdown-toggle" data-toggle="dropdown">
-              Documentatie
+              Documentation
             </a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
               <%= partial 'layouts/menu' %>
             </ul>
           </li>
-          <li><%= link_to 'Over de documentatie', 'documentatie.html' %></a></li>
-          <li><a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">Probleem aanmelden</a></li>
+          <li><%= link_to 'About the doucmentation', 'documentatie.html' %></a></li>
+          <li><a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">Report problem</a></li>
         </ul>
       </div>
     </div>
@@ -53,22 +53,25 @@
       <%= yield %>
       <div class="row-fluid">
         <div class="span10">
-          <h1>Verbeteringen handleiding</h1>
+          <h1>Contribute to this manual</h1>
 
-          <p>Indien er in deze handleidingen onderdelen missen en/of incorrect zijn kan er een
-            <a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">issue</a> worden aangemaakt op
-            GitHub.
-            Beschrijf hier het volgende:</p>
+          <p>
+            You can report an issue
+            <a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">here</a> or create a
+            <a href="https://github.com/Inter-Actief/Documentatie/pulls" target="_blank">pull request</a>.
+
+          </p>
+          <p>Describe the following:</p>
 
           <ul>
-            <li>URL van de pagina</li>
-            <li>Naam van het kopje</li>
-            <li>Citeer de foute zin</li>
-            <li>De verbeterde zin</li>
-            <li>Korte toelichting</li>
+            <li>URL of the page</li>
+            <li>Name of the heading</li>
+            <li>Quote the wrong sentence</li>
+            <li>Give the improved sentence</li>
+            <li>Give a brief explanation</li>
           </ul>
 
-          <p>De documentatie zal dan zo spoedig mogelijk weer in orde worden gemaakt.</p>
+          <p>The manual will then be updated as soon as possible.</p>
         </div>
       </div>
       <div>
