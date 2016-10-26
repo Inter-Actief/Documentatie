@@ -10,8 +10,8 @@
   <!-- Use title if it's in the page YAML frontmatter -->
   <title><%= current_page.data.title || 'University of Twente Documentation' %></title>
 
-  <%= stylesheet_link_tag 'bootstrap.min', 'prettify', 'flat-ui', 'all' %>
-  <%= javascript_include_tag 'bootstrap.min', 'jquery.min', 'prettify' %>
+  <%= stylesheet_link_tag 'bootstrap.min', 'font-awesome.min', 'flat-ui', 'all' %>
+  <%= javascript_include_tag 'jquery.min', 'bootstrap.min', 'prettify' %>
 </head>
 
 <body class="<%= page_classes %>">
@@ -34,8 +34,10 @@
             <%= partial 'layouts/menu' %>
           </ul>
         </li>
-        <li><%= link_to 'About the documentation', 'documentatie.html' %></a></li>
-        <li><a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">Report problem</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'About', 'documentation.html' %></a></li>
+        <li><a href="https://github.com/Inter-Actief/Documentatie" target="_blank"><i class="fa fa-github"></i></a></li>
       </ul>
     </div>
   </div>
