@@ -1,4 +1,8 @@
-.content{
-  margin-top: 33px;
-  margin-bottom: 50px;
+.content {
+    margin-top: 33px;
+    margin-bottom: 50px;
+}
+
+th {
+    text-align: left;
 }
