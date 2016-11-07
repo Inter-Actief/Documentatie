@@ -33,7 +33,7 @@
               <%= partial 'layouts/menu' %>
             </ul>
           </li>
-          <li><%= link_to 'About the doucmentation', 'documentatie.html' %></a></li>
+          <li><%= link_to 'About the documentation', 'about.html' %></a></li>
           <li><a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">Report problem</a></li>
         </ul>
       </div>
@@ -53,25 +53,15 @@
       <%= yield %>
       <div class="row-fluid">
         <div class="span10">
-          <h1>Contribute to this manual</h1>
+          <h2>Contribute to this website</h2>
 
           <p>
             You can report an issue
             <a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">here</a> or create a
             <a href="https://github.com/Inter-Actief/Documentatie/pulls" target="_blank">pull request</a>.
-
           </p>
-          <p>Describe the following:</p>
 
-          <ul>
-            <li>URL of the page</li>
-            <li>Name of the heading</li>
-            <li>Quote the wrong sentence</li>
-            <li>Give the improved sentence</li>
-            <li>Give a brief explanation</li>
-          </ul>
-
-          <p>The manual will then be updated as soon as possible.</p>
+          <p>For more info, see the <%= link_to 'About', 'about.html' %>-page.</p>
         </div>
       </div>
       <div>
