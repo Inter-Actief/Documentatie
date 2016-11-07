@@ -28,3 +28,7 @@ p {
 th {
     text-align: left;
 }
+
+.nav-header {
+    font-weight: bold;
+}
