@@ -1,3 +1,6 @@
+---
+title: Python 3
+---
 # Python 3
 This manual describes briefly how to install Python 3 on Windows.
 

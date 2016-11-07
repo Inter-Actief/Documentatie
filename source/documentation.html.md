@@ -1,3 +1,6 @@
+---
+title: Documentation
+---
 # Documentatie
 Deze website bevat alle documentatie voor de tools die worden gebruikt in vernieuwde TOM onderwijs. Deze website is niet verbonden aan een module of een jaar, deze site bevat documenten die door de jaren heen gebruikt kunnen worden. De technische informatica opleiding van de Universiteit Twente levert officiële support voor de verplichte windows laptops. De documentatie zal dus toegespits zijn op deze software. Verder is het wel mogelijk om zelf documentatie toe te voegen voor een ander platform zie [Eigen documentatie toevoegen](#toc_1).
 

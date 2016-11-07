@@ -1,3 +1,6 @@
+---
+title: Git
+---
 # Git
 Deze handleiding zal kort beschrijven hoe Git op Windows geïnstalleerd kan worden.
 

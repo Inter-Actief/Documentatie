@@ -1,3 +1,6 @@
+---
+title: Haskell
+---
 # Haskell
 This manual describes briefly how to install Haskell on Windows.
 
