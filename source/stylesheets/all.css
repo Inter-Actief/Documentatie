@@ -32,3 +32,19 @@ th {
 .nav-header {
     font-weight: bold;
 }
+
+th {
+    text-align: left;
+    font-size: 16px;
+    border-bottom: dashed 1px;
+    padding-bottom: 5px;
+}
+tr {
+    padding-top: 3px;
+    padding-bottom: 3px
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+    padding-left: 25px;
+}

@@ -13,7 +13,7 @@ Modelio is an open-source tool for drawing UML diagrams. It is used in the modul
 ## Terminology
 For some diagram types, the terminology used by modelio is different from the (standard) UML terminology in the Software Systems Design lecture slides
 
-### Activity diagram
+### Activity diagrams
 | UML terminology (slides) | Modelio               |
 |--------------------------|-----------------------|
 | Swimlane(s)              | Vertical Partition    |
@@ -25,6 +25,30 @@ For some diagram types, the terminology used by modelio is different from the (s
 | Fork / Rejoin            | Fork-Join             |
 | Branch condition         | none (free-form text) |
 | Clock                    | Time Event            |
+
+### Sequence diagrams
+| UML terminology (slides)              | Modelio                                                  |
+|---------------------------------------|----------------------------------------------------------|
+|(vierkant om diagram)                  | Combined fragment                                        |
+| Lifeline                              | Lifeline                                                 |
+| Activation                            | Execution specification                                  |
+| Message                               | Synchronous message                                      |
+| Return message                        | Reply message                                            |
+| Creation message                      | Creation message                                         |
+| Object destruction                    | Destruction message                                      |
+| Interaction operator (loop, alt, opt) | Combined fragment                                        |
+| Interaction constraint                | Interaction Operand                                      |
+| Interaction fragment (ref)            | Interaction use                                          |
+
+
+### State machines
+| UML terminology (slides)          | Modelio                                                  |
+|-----------------------------------|----------------------------------------------------------|
+| State                             | State                                                    |
+| Transition                        | Transition                                               |
+| Start /Stop symbol                | Initial / Final state                                    |
+| Composite state                   | State (becomes composite if you put other states inside) |
+| Composite state with parallelism  | Region                                                   |
 
 ## Settings
 *Configuration > Diagram styles* allows to modify a variety of settings for the visual presentation of diagrams. 
@@ -42,3 +66,4 @@ In the module Software Systems the following settings – different from the Mod
  Rectangle/Fill mode: Transparent <br>
  Rectangle/Line color: black <br>
  Text/Text color: black <br>
+ Transition/Show label: switched on <br>
