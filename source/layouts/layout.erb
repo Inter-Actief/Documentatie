@@ -10,61 +10,64 @@
   <!-- Use title if it's in the page YAML frontmatter -->
   <title><%= current_page.data.title %> - UT Documentation</title>
 
-  <%= stylesheet_link_tag 'bootstrap', 'bootstrap-docs', 'bootstrap-responsive', 'prettify', 'flat-ui', 'normalize', 'all' %>
-  <%= javascript_include_tag 'bootstrap', 'holder', 'jquery.min', 'prettify' %>
+  <%= stylesheet_link_tag 'bootstrap.min', 'font-awesome.min', 'flat-ui', 'all' %>
+  <%= javascript_include_tag 'jquery.min', 'bootstrap.min', 'prettify' %>
 </head>
 
 <body class="<%= page_classes %>">
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target="nav-collapse">
+<nav class="navbar-nav navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </a>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li class='dropdown'>
-            <a class="dropdown-toggle" data-toggle="dropdown">
-              Documentation
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-              <%= partial 'layouts/menu' %>
-            </ul>
-          </li>
-          <li><%= link_to 'About the documentation', 'about.html' %></a></li>
-          <li><a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">Report problem</a></li>
-        </ul>
-      </div>
+      </button>
+      <a class="navbar-brand" href="/">Documentation</a>
     </div>
-  </div>
-</div>
-<div class="container-fluid content">
-  <div class="row-fluid">
-    <div class="span2">
-      <!-- Chapter menu -->
-      <ul class='nav nav-list'>
-        <%= partial 'layouts/menu' %>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <%= partial 'layouts/menu' %>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'About', 'about.html' %></a></li>
+        <li><a href="https://github.com/Inter-Actief/Documentatie" target="_blank"><i class="fa fa-github"></i></a></li>
       </ul>
     </div>
-    <div class="span10">
-      <!-- Load the markdown documentation -->
-      <%= yield %>
-      <div class="row-fluid">
-        <div class="span10">
-          <h2>Contribute to this website</h2>
+  </div>
+</nav>
 
-          <p>
-            You can report an issue
-            <a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">here</a> or create a
-            <a href="https://github.com/Inter-Actief/Documentatie/pulls" target="_blank">pull request</a>.
-          </p>
-
-          <p>For more info, see the <%= link_to 'About', 'about.html' %>-page.</p>
-        </div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- Chapter menu -->
+        <ul class='nav nav-list'>
+          <%= partial 'layouts/menu' %>
+        </ul>
       </div>
-      <div>
+      <div class="col-md-9">
+        <!-- Load the markdown documentation -->
+        <%= yield %>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Contribute to this website</h2>
+
+            <p>
+              You can report an
+              <a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">issue</a> or create a
+              <a href="https://github.com/Inter-Actief/Documentatie/pulls" target="_blank">pull request</a>.
+              For more info, see the <%= link_to 'about', 'about.html' %>-page.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
