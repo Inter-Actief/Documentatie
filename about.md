@@ -1,5 +1,7 @@
 ---
+layout: page
 title: About
+permalink: /about/
 ---
 # About
 This website contains documentation for the tools used in the new TOM education. This website is not linked to a module or year, 
@@ -10,10 +12,10 @@ This website is configured to allow everyone to contribute. To together ensure p
 On this page is explained how a contribution can be made to the website.
 
 ### GitHub
-The code of this website is on: [GitHub](https://github.com/Inter-Actief/Documentatie). Want to learn more about Git? See <%= link_to 'Git', 'git.html' %>.
+The code of this website is on: [GitHub]({{ site.repo_url }}). Want to learn more about Git? See [Git](git.md).
 
 ### Issues
-Found a problem but don't want to fix it yourself? Report an issue to notify us of the error! Issues can be reported [here](https://github.com/Inter-Actief/Documentatie/issues).
+Found a problem but don't want to fix it yourself? Report an issue to notify us of the error! Issues can be reported [here]({{ site.issue_url }}).
 
 Describe at least the following:
 

@@ -8,13 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Use title if it's in the page YAML frontmatter -->
-  <title><%= current_page.data.title %> - UT Documentation</title>
+  <title>{{ page.title }} - {{ site.title }}</title>
 
-  <%= stylesheet_link_tag 'bootstrap.min', 'font-awesome.min', 'flat-ui', 'all' %>
-  <%= javascript_include_tag 'jquery.min', 'bootstrap.min', 'prettify' %>
+  <!-- Stylesheets and Javascript -->
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url }}"/>
+  <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css' | relative_url }}"/>
+  <link rel="stylesheet" href="{{ '/assets/css/flat-ui.css' | relative_url }}"/>
+  <link rel="stylesheet" href="{{ '/assets/css/all.css' | relative_url }}"/>
+  
+  <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/prettify.js' | relative_url }}"></script>
 </head>
 
-<body class="<%= page_classes %>">
+<body>
 <nav class="navbar-nav navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -31,13 +38,13 @@
       <ul class="nav navbar-nav">
         <li class="dropdown">
           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <%= partial 'layouts/menu' %>
+            {% include menu.html %}
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to 'About', 'about.html' %></a></li>
-        <li><a href="https://github.com/Inter-Actief/Documentatie" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="{{ '/about' | relative_url }}">About</a></li>
+        <li><a href="{{ site.repo_url }}" target="_blank"><i class="fa fa-github"></i></a></li>
       </ul>
     </div>
   </div>
@@ -49,12 +56,12 @@
       <div class="col-md-3">
         <!-- Chapter menu -->
         <ul class='nav nav-list'>
-          <%= partial 'layouts/menu' %>
+          {% include menu.html %}
         </ul>
       </div>
       <div class="col-md-9">
         <!-- Load the markdown documentation -->
-        <%= yield %>
+        {{ content }}
         <hr>
         <div class="row">
           <div class="col-md-12">
@@ -62,9 +69,9 @@
 
             <p>
               You can report an
-              <a href="https://github.com/Inter-Actief/Documentatie/issues" target="_blank">issue</a> or create a
-              <a href="https://github.com/Inter-Actief/Documentatie/pulls" target="_blank">pull request</a>.
-              For more info, see the <%= link_to 'about', 'about.html' %>-page.
+              <a href="{{ site.issue_url }}" target="_blank">issue</a> or create a
+              <a href="{{ site.pr_url }}" target="_blank">pull request</a>.
+              For more info, see the <a href="{{ '/about' | relative_url }}">About</a>-page.
             </p>
           </div>
         </div>

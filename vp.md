@@ -1,5 +1,7 @@
 ---
+layout: page
 title: Visual Paradigm
+permalink: /vp/
 ---
 # Visual Paradigm
 Visual Paradigm (VP) is a software modelling tool for drawing UML diagrams. It is used in the modules Software Systems and Data & Information. VP comes in various editions; we use the Community Edition, which can be used for non-commercial purposes.
@@ -13,6 +15,7 @@ For some concepts, Visual Paradigm terminology is slightyly different from the (
 Below is a comprehensive list of concepts used in the Design thread of Software Systems, in red the ones that need special attention.
 
 ### Activity diagrams
+
 | **UML terminology (slides)** | **Visual Paradigm** |
 | ---------------------------- | ------------------- |
 | Swimlanes                    | (Vertical) Swimlane |
@@ -30,6 +33,7 @@ Below is a comprehensive list of concepts used in the Design thread of Software 
 | Clock                        | Accept Time Event Action _(type of Action)_ |
 
 ### Use Case Diagram
+
 | **UML terminology (slides)** | **Visual Paradigm** |
 | --- | --- |
 | System | System |
@@ -40,6 +44,7 @@ Below is a comprehensive list of concepts used in the Design thread of Software 
 | Generalization | Generalization |
 
 ### Class Diagram
+
 | **UML terminology (slides)** | **Visual Paradigm** |
 | --- | --- |
 | Class | Class |
@@ -51,6 +56,7 @@ Below is a comprehensive list of concepts used in the Design thread of Software 
 | Generalization | Generalization |
 
 ### Sequence Diagram
+
 | **UML terminology (slides)** | **Visual Paradigm** |
 | --- | --- |
 | Lifeline (Actor) | Actor |
@@ -67,6 +73,7 @@ _Operator kind_  = loop, alt, opt, ref |
 | Interaction constraint | Operand &gt; Guard |
 
 ### State machines
+
 | **UML terminology (slides)** | **Visual Paradigm** |
 | --- | --- |
 | State | State |

@@ -1,5 +1,7 @@
 ---
+layout: page
 title: SQL
+permalink: /sql/
 ---
 # SQL
 This manual contains a number of links to tutorials related to SQL.

@@ -1,24 +1,26 @@
 ---
+layout: page
 title: Python 3
+permalink: /python/
 ---
 # Python 3
 This manual describes briefly how to install Python 3 on Windows.
 
-##System requirements
-####Recommended
+## System requirements
+#### Recommended
 * Windows 8 or 10 (64 bit)
 
-####Minimum
+#### Minimum
 * Windows Vista (XP not supported)
 
-##Installation
+## Installation
 This chapter describes where Python can be downloaded and how to install Python correctly.
 
-###Download
+### Download
 Click at the [Python 3 download](https://www.python.org/getit/) link to get at the download page of Python. Download the latest version of Python 3, e.g:
 `Python 3.5.2.exe`
 
-###Install Python
+### Install Python
 **Run** your downloaded `python-3.#.#.exe` file. Run through the default setup, nothing has to be changed.
 
 > **WARNING:** Don't forget to notate the install folder. For this manual, `C:\Python` is used.
@@ -45,11 +47,11 @@ The following code will execute a print statement:
 print("Python works!")
 ```
 
-##Getting started
+## Getting started
 The machine now has a working installation of Python and it's time to get to know Python itself. Below you find the offical documentation and a link to Codecademy, an online platform to learn programming languages.
 
-###Official documentation
+### Official documentation
 [The official Python 3.0 documentation can be found here](http://docs.python.org/3.0/index.html).
 
-###Codecademy
+### Codecademy
 Codecademy is an online platform where many programming languages can be learned, including Python. Codecademy has many excercises varying from novice to advanced. [Click here to go to Codecademy](https://www.codecademy.com/learn/python).

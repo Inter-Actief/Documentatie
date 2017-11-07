@@ -1,5 +1,7 @@
 ---
+layout: page
 title: Arduino
+permalink: /arduino/
 ---
 # Arduino
 This manual describes briefly how to install the software for working with Arduino's on Windows.

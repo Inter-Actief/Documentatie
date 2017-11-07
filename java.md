@@ -1,5 +1,7 @@
 ---
+layout: page
 title: Java 7
+permalink: /java/
 ---
 # Java 7
 Deze handleiding zal kort beschrijven hoe Java op Windows geïnstalleerd kan worden.
@@ -23,7 +25,7 @@ Download en installeer de volgende programma's om Java te kunnen draaien.
 Start de installatie nadat java is gedownload en installeer java.
 Indien dit voltooid is moet het configuratie scherm worden geopend en de volgende zoekterm worden ingetoetst `variabel` zoals aangegeven bij stap 1 in de afbeelding.
 
-![Configuratie scherm](java-configuratie-scherm.png)
+![Configuratie scherm](assets/img/java-configuratie-scherm.png)
 
 Vervolgens dient er op **omgevingsvariabelen..** geklikt te worden en dan op de knop **Nieuw..**.
 Hier wordt om twee gegevens gevraagd en vul hierbij het volgende in:

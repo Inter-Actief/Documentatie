@@ -1,5 +1,7 @@
 ---
+layout: page
 title: Trello
+permalink: /trello/
 ---
 # Trello
 Trello is an online platform on which tasks can be tracked and assigned.

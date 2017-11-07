@@ -1,5 +1,7 @@
 ---
+layout: page
 title: Lightside
+permalink: /lightside/
 ---
 # Lightside
 Deze handleiding zal kort beschrijven hoe LightSide op Windows geïnstalleerd kan worden.
